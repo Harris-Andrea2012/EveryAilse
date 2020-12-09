@@ -50,6 +50,8 @@ router.use(express.static('./public'))
 
 router.use(bodyParser.json())
 
+const headerFilePath = __dirname + '/public/pdf_header.png'
+
 
 
 
@@ -523,10 +525,11 @@ router.post('/sendEmail', (req, res) => {
             to: email,
             subject: `Here's your Shopping List!`,
             html: data,
+            //`../Server/public/pdf_header.png`
 
             attachments: [{
                 filename: 'pdf_header.png',
-                path: `/public/pdf_header.png`,
+                path: headerFilePath,
                 cid: 'logoHeader'
             }]
         }
