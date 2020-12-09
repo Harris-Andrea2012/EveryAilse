@@ -497,17 +497,7 @@ router.post('/getShoppingLists', (req, res) => {
 
 })
 
-router.get('/emailTest', (req, res) => {
-    var title = "title of shopping list"
-    var stores = ['Target', 'Walmart', 'Best Buy']
-    var items = [
-        { name: 'Milk', qty: 3, link: 'https://www.google.com/' },
-        { name: 'Ham', qty: 5, link: 'https://www.google.com/' },
-        { name: 'Eggs', qty: 1, link: null }
-    ]
-    res.render('email', { stores: stores, items: items, title })
 
-})
 
 
 router.post('/sendEmail', (req, res) => {
