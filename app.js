@@ -37,7 +37,7 @@ fs.readdirSync(__dirname + '/routes').forEach((filename) => {
 
 })
 
-app.listen(port, console.log(`Listening on port ${3000}`))
+app.listen(port, console.log(`Listening on port ${port}`))
 
 process.on('SIGINT', () => {
     console.log('stuff')
