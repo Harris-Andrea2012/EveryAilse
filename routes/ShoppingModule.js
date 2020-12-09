@@ -523,11 +523,12 @@ router.post('/sendEmail', (req, res) => {
             to: email,
             subject: `Here's your Shopping List!`,
             html: data,
+            /*
             attachments: [{
                 filename: 'pdf_header.png',
                 path: `../Server/public/pdf_header.png`,
                 cid: 'logoHeader'
-            }]
+            }]*/
         }
 
         transporter.sendMail(mailOptions, (err, info) => {

@@ -15,7 +15,7 @@ const connections = [EveryAilse, EveryStore1, EveryStore2, EveryStore3, EverySto
 
 
 
-
+//app.use(express.static('public'))
 app.use(express.static(path.join(__dirname, "/public")))
 app.set('view engine', 'ejs')
 
