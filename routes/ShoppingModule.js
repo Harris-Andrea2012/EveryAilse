@@ -522,14 +522,13 @@ router.post('/sendEmail', (req, res) => {
             from: 'EveryAisle <CustomerService@EveryAisle.com>',
             to: email,
             subject: `Here's your Shopping List!`,
-            html: data
-                /*,
-                         
-                          attachments: [{
-                              filename: 'pdf_header.png',
-                              path: `../Server/public/pdf_header.png`,
-                              cid: 'logoHeader'
-                          }]*/
+            html: data,
+
+            attachments: [{
+                filename: 'pdf_header.png',
+                path: `/public/pdf_header.png`,
+                cid: 'logoHeader'
+            }]
         }
 
         transporter.sendMail(mailOptions, (err, info) => {
