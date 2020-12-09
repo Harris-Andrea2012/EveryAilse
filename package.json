@@ -1,0 +1,31 @@
+{
+    "name": "every_ailse_server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "dev": "nodemon app.js",
+        "start": "node app.js"
+    },
+    "author": "Andrea Harris",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "crypto": "^1.0.1",
+        "dotenv": "^8.2.0",
+        "ejs": "^3.1.5",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.2.0",
+        "fs": "0.0.1-security",
+        "mongo": "^0.1.0",
+        "mongoose": "^5.10.9",
+        "nodemailer": "^6.4.16",
+        "nodemailer-mailgun-transport": "^2.0.2",
+        "path": "^0.12.7",
+        "promise": "^8.1.0",
+        "request": "^2.88.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.5"
+    }
+}
