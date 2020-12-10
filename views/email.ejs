@@ -85,6 +85,11 @@
                                 <%= shoppingList[i].cartItemsPerRetailerList[j].productQty %>
                             </h6>
                         </td>
+                        <td style="text-align: center;">
+                            <h6>$
+                                <%= shoppingList[i].cartItemsPerRetailerList[j].cartItem.price.value %>
+                            </h6>
+                        </td>
                         <% if(shoppingList[i].cartItemsPerRetailerList[j].cartItem.productLink != null){%>
                             <td style="text-align: center;">
                                 <a style="color: #bd3c00;" href="<%= shoppingList[i].cartItemsPerRetailerList[j].cartItem.productLink %>"> 
@@ -116,6 +121,7 @@
 
             <%}
         %>
+
 
     </div>
     <div>

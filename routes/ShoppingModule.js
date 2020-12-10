@@ -504,7 +504,7 @@ router.post('/getShoppingLists', (req, res) => {
 
 
 router.post('/sendEmail', (req, res) => {
-    console.log('Filepath is ' + headerFilePath)
+
     var shoppingList = req.body.RetailerObjects
     var title = req.body.title
 
